@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About | Q Gaming</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon.jpg"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/img/safari-pinned-tab.svg"
+      color="#162f68"
+    />
+    <link rel="shortcut icon" href="./assets/img/favicon.jpg" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="scrollable-element">
+    <header id="header" class="fixed-top">
+      <div class="container">
+        <div class="justify-flex-item-between-center">
+          <a href="./index.html">
+            <img
+              src="./assets/img/website-logo.jpg"
+              alt="Q Gaming Logo"
+              class="header-logo"
+            />
+          </a>
+          <div class="navbar-design">
+            <nav id="navbar" class="navbar">
+              <ul>
+                <li>
+                  <a
+                    class="nav-link scrollto active"
+                    id="link1"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto" id="link2" href="./index.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto" id="link3" href="./index.html"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto" id="link4" href="./index.html"
+                    >Why Q</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto" id="link5" href="./index.html"
+                    >Infographics
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" id="link6" href="./index.html"
+                    >Partners</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link scrollto" id="link7" href="./index.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Section -->
+      <section class="contactus-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="aboutuspage-heading text-center">Q Gaming Careers</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section -->
+
+      <!-- Section -->
+      <section class="contactus-form-section">
+        <div class="container">
+          <div class="row justify-flex-center">
+            <div class="col-12 col-lg-7">
+              <h4>Join Our Team</h4>
+            </div>
+            <div class="col-12 col-lg-7 mt-5">
+              <form onsubmit="sendEmail(event)">
+                <div class="mb-3">
+                  <label for="firstName" class="form-label"
+                    >First Name <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="lastName" class="form-label"
+                    >Last Name <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Email <span class="required">*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="position" class="form-label">Position</label>
+                  <select class="form-select" id="position">
+                    <option value="Select you option">Select you option</option>
+                    <option value="Electrical Engineer">
+                      Electrical Engineer
+                    </option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Artificial Intelligence Researcher">
+                      Artificial Intelligence Researcher
+                    </option>
+                    <option value="Deep Learning Engineer">
+                      Deep Learning Engineer
+                    </option>
+                    <option value="web developer">Website Developer</option>
+                    <option value="mobile appdeveloper">
+                      Mobile App Developer
+                    </option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="resume" class="form-label"
+                    >Resume/CV <span class="required">*</span></label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="resume"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="portfolio" class="form-label"
+                    >Portfolio URL</label
+                  >
+                  <input
+                    type="url"
+                    class="form-control"
+                    id="portfolio"
+                    placeholder="Enter your portfolio URL"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="comments" class="form-label">Any Comments</label>
+                  <textarea
+                    class="form-control"
+                    id="comments"
+                    rows="4"
+                    placeholder="Tell us a bit about yourself"
+                  ></textarea>
+                </div>
+                <div class="col-12 col-lg-2">
+                  <button type="submit" class="submit-button">Apply Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-5 title-color address" id="address">
+            500 Terry Francine Street San Francisco, CA 94158
+          </div>
+          <div class="col-12 col-sm-3 justify-flex-center">
+            <a href="mailto:info@qgaming.me">info@qgaming.me</a>
+          </div>
+          <div class="col-12 col-sm-4 justify-flex-center">
+            <a href="telto:1234567890">123-456-7890</a>
+          </div>
+          <div class="container">
+            <div class="row justify-flex-between mt-1">
+              <div class="col-12 col-sm-5 title-color Reserved" id="rights">
+                © 2024 All Rights Reserved by Q Gaming
+              </div>
+              <div
+                class="col-12 col-sm-3 justify-flex-item-evenly-center mt-1 mb-1"
+              >
+                <a href="">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+              <div class="col-12 col-sm-4 justify-flex-center">
+                <a href="./submit-your-application.html">
+                  <button class="footer_button">Get in Touch with us</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      function sendEmail(event) {
+        event.preventDefault();
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const position = document.getElementById("position").value;
+        const portfolio = document.getElementById("portfolio").value;
+        const comments = document.getElementById("comments").value;
+        const subject = `Applying for the position of ${position}`;
+        const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nPosition: ${position}\nPortfolio: ${portfolio}\nComments: ${comments}`;
+        window.location.href = `mailto:info@qgaming.me?subject=${encodeURIComponent(
+          subject
+        )}&body=${encodeURIComponent(body)}`;
+      }
+    </script>
+  </body>
+</html>
